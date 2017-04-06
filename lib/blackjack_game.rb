@@ -3,8 +3,10 @@ class BlackjackGame
   def sum_of_cards(card)
     if card.include?("A")
       1
-    else
+    elsif card.include?("2")
       2
+    else
+      3
     end
   end
 

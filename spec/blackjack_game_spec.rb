@@ -32,4 +32,9 @@ describe BlackjackGame do
     expect(blackjack_game.sum_of_cards("2C")).to eq(2)
   end
 
+  it "returns 3 if card is 3 of clubs" do
+    blackjack_game = BlackjackGame.new
+    expect(blackjack_game.sum_of_cards("3C")).to eq(3)
+  end
+
 end
