@@ -1,9 +1,9 @@
 class BlackjackGame
 
   def sum_of_cards(card)
-    if card == "AC" || card == "AS" || card == "AH" || card == "AD"
+    if card.include?("A")
       1
-    else 
+    else
       2
     end
   end
