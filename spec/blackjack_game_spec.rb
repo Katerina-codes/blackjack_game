@@ -12,4 +12,9 @@ describe BlackjackGame do
     expect(blackjack_game.sum_of_cards("AS")).to eq(1)
   end
 
+  it "returns 1 if card is Ace of hearts" do
+    blackjack_game = BlackjackGame.new
+    expect(blackjack_game.sum_of_cards("AH")).to eq(1)
+  end
+
 end
